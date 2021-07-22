@@ -1,0 +1,61 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+h2{
+  font-size: 3em;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.good-at h3{
+  background-color: rgb(11, 192, 5);
+}
+.intermediate h3{
+  background-color: rgb(14, 148, 189);
+}
+.New h3{
+  background-color: rgb(211, 12, 38);
+}
+p{
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+li{
+    list-style: none;
+    font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.portofolio p a{
+  cursor: none;
+}
+.portofolio h1{
+  background: rgb(194,191,244);
+background: linear-gradient(90deg, rgba(194,191,244,1) 0%, rgba(250,134,10,1) 0%, rgba(246,188,11,1) 96%);
+}
+.img-github{
+  border-radius: 50%;
+}
+.card-img-top{
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+}
+.card-body{
+  box-shadow: 0 15px 15px 8px rgb(0, 0, 0, 0.5);
+}
