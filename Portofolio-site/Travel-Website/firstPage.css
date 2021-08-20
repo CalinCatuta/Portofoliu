@@ -70,21 +70,21 @@ header .logo {
 }
 
 .text h2 {
-  font-size: 2.3em;
+  font-size: clamp(2rem, 1rem + 10vw, 5rem);
   font-weight: 500;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text h3 {
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1rem + 10vw, 2.5rem);
   font-weight: 500;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
 }
 .text p {
-  font-size: 1em;
+  font-size: clamp(1rem, 1rem +10vw, 3rem);
   color: #fff;
   margin: 15px 0;
   font-weight: 400;
@@ -140,10 +140,5 @@ header .logo {
   .showcase header {
     padding: 30px;
   }
-  .text h2 {
-    font-size: 3em;
-  }
-  .text h3 {
-    font-size: 2em;
-  }
+  
 }
