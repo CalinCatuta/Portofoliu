@@ -21,6 +21,7 @@
     <title>Calin Portofolio</title>
   </head>
   <body>
+    <div id="scrolbar"></div>
     <!-- Header -->
     <header class="intro">
       <div class="container mt-5">
@@ -77,7 +78,7 @@
                 <li>JavaScript</li>
                 <li>Jquery</li>
                 <li>Git and GitHub</li>
-                <li>Sass/Scss</li>
+                <li>Sass</li>
               </ul>
             </div>
             <div class="New">
@@ -177,5 +178,15 @@
         </div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop(),
+          dh = $(document).height(),
+          wh = $(window).height();
+        scrollPrecent = (scroll / (dh - wh)) * 100;
+        $("#scrolbar").css("height", scrollPrecent + "%");
+      });
+    </script>
   </body>
 </html>
