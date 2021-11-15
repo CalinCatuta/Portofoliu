@@ -1,4 +1,30 @@
 let CartBtn = document.querySelectorAll(".add-cart");
+
+
+if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready)
+} else {
+    ready()
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('fa-times')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+    function removeCartItem(event) {
+        
+        var buttonClicked = event.target
+        buttonClicked.parentElement.parentElement.remove()
+        buttonClicked = localStorage.removeItem('productsInCart')
+        buttonClicked = localStorage.removeItem('cartNumbers')
+        buttonClicked = localStorage.removeItem('totalCost')
+        
+       
+    }
+}
+
 let products = [
    {
        name:"Adidas Black",
@@ -19,25 +45,26 @@ let products = [
        inCart:0
    },
    {
-       name:"Nike",
+       name:"Nike Lebron",
        tag:"nike",
        price:40,
        inCart:0
    },
    {
-       name:"Sneakers",
+       name:"Sneakers New",
        tag:"sneakers",
        price:40,
        inCart:0
    },
    {
-       name:"Vans",
+       name:"Vans Old",
        tag:"vans",
        price:40,
        inCart:0
    }
 
 ]
+// for loop btn cart
 for (let i = 0; i < CartBtn.length; i++) {
     CartBtn[i].addEventListener('click', () =>{
         cartNumber(products[i]);
@@ -46,13 +73,16 @@ for (let i = 0; i < CartBtn.length; i++) {
     
 }
 
-function onLoadCartNumbers(){
-    let productNumbers = localStorage.getItem('cartNumbers');
+
+
+
+// function onLoadCartNumbers(){
+//     let productNumbers = localStorage.getItem('cartNumbers');
     
-    if(productNumbers){
-        document.querySelector('.cart span').textContent = productNumbers;
-    }
-}
+//     if(productNumbers){
+//         document.querySelector('.cart span').textContent = productNumbers;
+//     }
+// }
 
 function cartNumber(product){
     let productNumbers = localStorage.getItem('cartNumbers');
@@ -103,12 +133,15 @@ function totalCost(product){
 
     
 }
+
 function displayCart(){
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products');
-    let cartCost = localStorage.getItem('totalCost');
-
+    
+    
+   
+     
 
     if( cartItems && productContainer  ){
         productContainer.innerHTML = '';
@@ -122,26 +155,20 @@ function displayCart(){
             </td>
             <td class="price">$${item.price},00</td>
             <td class="quantity">
-            <i class="fas fa-caret-left"></i>
-            <span>${item.inCart}</span>
-            <i class="fas fa-caret-right"></i>
+            <span >${item.inCart}</span>
             </td>
             <td class="total">$${item.inCart * item.price},00</td>
             </tr>
 
             `  
         })
-        productContainer.innerHTML +=`
-        <div class="TotalCostContainer">
-        <h4 class="TotalCostTitle">Total Cost</4>
-        <h4 class="TotalCost">
-        $${cartCost},00
-        </4>
-        </div>
-        `
+        
     }
 }
 
 
+
+
 displayCart();
-onLoadCartNumbers();
+// onLoadCartNumbers();
+
