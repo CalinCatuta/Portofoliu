@@ -1,16 +1,9 @@
 let CartBtn = document.querySelectorAll(".add-cart");
 
-
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
-} else {
-    ready()
-}
-
 function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('fa-times')
-    for (var i = 0; i < removeCartItemButtons.length; i++) {
-        var button = removeCartItemButtons[i]
+    let removeCartItemButtons = document.getElementsByClassName('fa-times')
+    for (let i = 0; i < removeCartItemButtons.length; i++) {
+        let button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
     function removeCartItem(event) {
@@ -74,16 +67,6 @@ for (let i = 0; i < CartBtn.length; i++) {
 }
 
 
-
-
-// function onLoadCartNumbers(){
-//     let productNumbers = localStorage.getItem('cartNumbers');
-    
-//     if(productNumbers){
-//         document.querySelector('.cart span').textContent = productNumbers;
-//     }
-// }
-
 function cartNumber(product){
     let productNumbers = localStorage.getItem('cartNumbers');
 
@@ -139,10 +122,6 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector('.products');
     
-    
-   
-     
-
     if( cartItems && productContainer  ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -166,9 +145,7 @@ function displayCart(){
     }
 }
 
-
-
-
 displayCart();
-// onLoadCartNumbers();
+ready();
+
 
