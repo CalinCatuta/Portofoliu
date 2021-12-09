@@ -64,20 +64,3 @@ li {
   box-shadow: 0 15px 15px 8px rgb(0, 0, 0, 0.5);
 }
 
-/* Scroll bar */
-::-webkit-scrollbar {
-  width: 0;
-}
-#scrolbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 15px;
-  border-radius: 10px;
-  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
-}
-@media (max-width: 574px) {
-  #scrolbar {
-    display: none;
-  }
-}
