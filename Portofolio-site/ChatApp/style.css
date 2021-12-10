@@ -51,7 +51,7 @@ header p{
     width: 70%;
     height: auto;
     color: #FA7268;
-    box-shadow: 0 0 0.5em 0 #c62367;
+    box-shadow: 0 0 2em 0 #c62367;
 }
 .box p{
     font-size: clamp(1rem, 1.5vw, 1.25rem);
