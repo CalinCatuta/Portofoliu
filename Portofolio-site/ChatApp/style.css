@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&family=Readex+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; 
+}
+body{
+    background-color:#010b13;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url('./layered-waves-haikei.svg');
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #C62368;
+    width: 100%;
+    
+    margin-bottom: 250px;
+    
+}
+
+header p{
+    color: #FA7268;
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+.title{
+    font-family: 'Readex Pro', sans-serif;
+    color: #C62368;
+    font-size: clamp(3rem, 3vw, 4rem);
+}
+
+/* Card */
+
+.box{
+    border: solid 4px #C62368;
+    width: 70%;
+    height: auto;
+    color: #FA7268;
+    box-shadow: 0 0 0.5em 0 #c62367;
+}
+.box p{
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.grid{
+    
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "box1  ."
+    ".  box2"
+    "box3  ."
+    ".  box4"
+    "box5  ."
+    ".  box6"
+    ;
+    justify-items: center;
+    
+}
+
+.box1{
+    grid-area: box1;
+    border-radius: 20px 20px 20px 0 ;
+}
+.box2{
+    grid-area: box2;
+    border-radius: 20px 20px 0px 20px ;
+}
+.box3{
+    grid-area: box3;
+    border-radius: 20px 20px 20px 0 ;
+}
+.box4{
+    grid-area: box4;
+    border-radius: 20px 20px 0px 20px ;
+}
+.box5{
+    grid-area: box5;
+    border-radius: 20px 20px 20px 0 ;
+}
+.box6{
+    grid-area: box6;
+    border-radius: 20px 20px 0px 20px ;
+}
+@media (max-width:750px){
+    .grid{
+       display: inline-block;
+    }
+    .box{
+        width: 100%;
+    }
+}
+
+
+/* Footer */
+
+.footer{
+    margin-top: 80px;
+}
+.footer p{
+    color: #FA7268;
+}
+
+#comment{
+    font-size: 2rem;
+    text-decoration: none;
+    color:#FA7268 ;
+    border: 2px solid #C62368;
+    border-radius: 20px;
+    background-color:#010b13 ;
+    padding: 10px 20px;
+    text-shadow: 0 0 0.125em #FA7268;
+    box-shadow: 0 0 0.5em 0 #c62367;
+}
