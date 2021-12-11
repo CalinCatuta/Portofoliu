@@ -86,4 +86,7 @@ a {
   .card {
     margin-left: 20px;
   }
+  #lightbox.active {
+    display: none;
+    }
 }
