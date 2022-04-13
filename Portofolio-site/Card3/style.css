@@ -151,14 +151,14 @@ ul li a{
 
 /* Staf */
 .staf{
-    margin-top: 20vh;
-    margin-bottom: 10vh;
+    margin-top: 15vh;
+    
 }
 .staf h3{
     text-align: center;
     margin-bottom: 15vh;
     text-transform: uppercase;
-    color:#ccc;
+    color:rgb(153, 151, 151);
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
 .flex{
