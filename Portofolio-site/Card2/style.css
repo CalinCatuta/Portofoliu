@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ul li{
+   width: 90px;
+   text-transform: uppercase;
+   color: rgb(75, 72, 72);
+   font-weight: 400;
+}
+.login{
+    color: white !important;
+}
+.btn-light{
+    box-shadow: 2px 5px  rgb(240, 238, 238);
+}
+
+
+/* features */
+.features, .extension, .quest{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.wid{
+    width: min(450px, 80%);
+}
+/* btn */
+.btn-grp{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-grp .btn{
+    margin: 5px;
+    
+}
+.btn-grp .btn.active{
+    border-bottom: 2px red solid;
+    
+}
+
+/* browser cards */
+
+.browser, .center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin: 50px;
+}
+.browser-card{
+    width: min(300px, 70%);
+    margin: 20px;
+    box-shadow: 0px 4px rgb(247, 244, 244);
+}
+.fox{
+    margin-top: 80px;
+}
+.opera{
+    margin-top: 150px;
+}
+/* quest */
+
+.quest .wid{
+    width: min(600px, 80%);
+}
+
+/* footer */
+
+footer{
+    height: 500px;
+    color: white;
+    background-color: rgb(80, 97, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer p{
+    font-size: 1.5rem;
+}
+footer h1{
+    text-align: center;
+    width: min(500px, 70%);
+}
+.mail input{
+    width: 300px;
+    padding: 10px;
+}
+.mail button{
+    padding: 10px;
+    margin: 5px;
+}
+
+.social{
+    padding: 30px;
+    background-color: rgb(30, 30, 56);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.social a{
+    color: #ddd;
+}
+ .right{
+        margin-left: 50px;
+    }
+
+/* Media */
+
+@media (max-width:970px){
+
+
+    .hd-img{
+        margin-top: 40px;
+    }
+    .tel{
+        text-align: center;
+    }
+    .browser{
+        flex-direction: column;
+    }
+    .mail{
+        display: flex;
+        flex-direction: column;
+    }
+    .mail button{
+        width: 290px;
+    }
+    .social{ 
+        flex-direction: column;
+    }
+    .social div{
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* navbar */
+
+    .navbar-nav{
+        background-color: rgba(66, 70, 133, 0.918);
+        height: 300px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .navbar-nav a{
+        color: #fff !important;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 5px;
+        border-bottom:1px solid white ;
+       
+    }
+    .nav-item .login{
+        border: 1px solid white;
+
+    }
+    .btn-danger{
+        background-color: rgba(66, 70, 133, 0.212) !important;
+    }
+   
+}
+@media (max-width:400px){
+    
+    .dots{
+        width: 70%;
+        height: 4px;
+    }
+   #cont-img{
+       width: 350px;
+   }
+   .btn-grp{
+       flex-direction: column;
+   }
+ 
+}
+
+/* galaxy fold */
+
+@media (max-width:281px){
+  .mail button, .mail input{
+      width: 200px;
+  }
+  .browser-card h3{
+      font-size: 14px;
+  }
+  .browser-card .add{
+      font-size: 10px;
+  }
+}
