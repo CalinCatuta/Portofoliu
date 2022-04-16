@@ -177,8 +177,9 @@ ul li a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 400px;
+    width: min(350px, 80%);
 }
+
 .box img{
     margin-bottom: 50px;
     border-radius: 50%;
