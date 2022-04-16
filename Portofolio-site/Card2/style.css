@@ -180,7 +180,7 @@ footer h1{
         height: 4px;
     }
    #cont-img{
-       width: 350px;
+     width: 98%;
    }
    .btn-grp{
        flex-direction: column;
