@@ -168,7 +168,7 @@ footer h1{
         border: 1px solid white;
 
     }
-    .btn-danger{
+   .nav-item .btn-danger{
         background-color: rgba(66, 70, 133, 0.212) !important;
     }
    
