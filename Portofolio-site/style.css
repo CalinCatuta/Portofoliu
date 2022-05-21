@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Playball&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(89.64deg, #f8f8f8 10.51%, #dddddd 101.48%);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 150px;
+}
+.logo {
+  text-decoration: none;
+  font-family: "Playball", cursive;
+  font-size: 55px;
+  color: black;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  padding: 0px 30px;
+  font-size: 36px;
+}
+
+main h1 {
+  font-size: 96px;
+  margin-bottom: 60px;
+  letter-spacing: 10px;
+  position: relative;
+  animation: heading;
+  animation-duration: 5s;
+}
+@keyframes heading {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+main p {
+  color: #585757;
+  line-height: 40px;
+  font-size: 32px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.content {
+  width: 600px;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin: 90px 20px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  main h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  main p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  ul li {
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+  .content {
+    width: 300px;
+  }
+}
+
+/* About */
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.sc-content {
+  width: 700px;
+}
+
+section h1 {
+  font-size: 64px;
+  margin-bottom: 60px;
+}
+section p {
+  color: #585757;
+  font-size: 30px;
+  line-height: 40px;
+}
+section img {
+  width: 600px;
+  position: relative;
+  animation: heading;
+  animation-duration: 5s;
+}
+@media (max-width: 1300px) {
+  section {
+    flex-direction: column;
+  }
+  .sc-content {
+    margin-bottom: 50px;
+  }
+  section img {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .sc-content {
+    width: 90%;
+    margin-bottom: 100px;
+  }
+  section h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+  section p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  section img {
+    width: 90%;
+  }
+}
+
+/* Contact */
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 200px;
+}
+.insta,
+.design,
+.zoho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta {
+  width: 411px;
+  height: 457px;
+  background: linear-gradient(
+    180deg,
+    rgba(88, 92, 205, 0.85) 0%,
+    rgba(88, 92, 205, 0.94) 0.01%,
+    rgba(236, 84, 76, 0.91) 100%
+  );
+  border-radius: 20px;
+}
+.insta div {
+  width: 273px;
+  color: #f8f8f8;
+  font-size: 28px;
+}
+.zoho div {
+  width: 272px;
+  color: #222222;
+  font-size: 24px;
+}
+.insta img,
+.zoho img {
+  margin-bottom: 50px;
+}
+.plants {
+  width: 411px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: rgb(248, 248, 248);
+}
+.zoho {
+  width: 411px;
+  height: 457px;
+  background: linear-gradient(180deg, #ef463e 0%, #ffe214 100%);
+  border-radius: 20px;
+}
+
+@media (max-width: 1300px) {
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact div {
+    margin: 30px 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .insta,
+  .zoho {
+    width: 303px;
+    height: 336px;
+  }
+  .insta img {
+    width: 98px;
+    height: 95.5px;
+  }
+  .zoho img {
+    width: 183.578px;
+    height: 63.96px;
+  }
+  .zoho h3 {
+    font-size: 22px;
+  }
+}
+
+/* Project */
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  font-size: 32px;
+}
+
+.btns a:hover {
+  border-bottom: 3px solid black;
+}
