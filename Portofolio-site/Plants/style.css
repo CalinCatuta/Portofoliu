@@ -77,7 +77,9 @@ strong {
 .a:hover {
   color: #044818;
 }
-
+.owl-dot {
+  margin-bottom: 40px !important;
+}
 .owl-dot.active span {
   background-color: black !important;
 }
