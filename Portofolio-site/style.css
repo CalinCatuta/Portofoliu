@@ -258,7 +258,7 @@ section img {
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
     ". card1 . card2 ."
-    ". . card3 . .";
+    ". card3 . card4 .";
 }
 .card1 {
   grid-area: card1;
@@ -273,7 +273,12 @@ section img {
 }
 .card3 {
   grid-area: card3;
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.card4 {
+  grid-area: card4;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -282,7 +287,7 @@ section img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       ". card1 card2 ."
-      ". card3 card3 .";
+      ". card3 card4 .";
     gap: 2rem;
   }
 }
@@ -292,7 +297,8 @@ section img {
     grid-template-areas:
       "card1"
       "card2"
-      "card3";
+      "card3"
+      "card4";
     gap: 2rem;
   }
 }
@@ -302,7 +308,8 @@ section img {
     grid-template-areas:
       "card1"
       "card2"
-      "card3";
+      "card3"
+      "card4";
     gap: 2rem;
   }
   .grid-card img {
