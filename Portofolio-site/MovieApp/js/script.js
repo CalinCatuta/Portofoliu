@@ -496,6 +496,15 @@ function displayPagination(){
     if(global.currentPage.includes('/index.html')){
       DisplaySlider()
       displayPopularMovies();
+    }else if(global.currentPage.includes('/shows.html')){
+      DisplayTvSlider();
+      displayPopularShows();
+    }else if(global.currentPage.includes('/movie-details.html')){
+      displayMovieDetails()
+    }else if(global.currentPage.includes('/tv-details.html')){
+      displayShowDetails()
+    }else if(global.currentPage.includes('/search.html')){
+      search()
     }
   
     activeLi()
