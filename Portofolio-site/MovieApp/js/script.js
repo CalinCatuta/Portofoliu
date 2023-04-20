@@ -473,25 +473,29 @@ function displayPagination(){
   function init() {
     // In aceasta functie folosim switch se putea folosi si if. 
     // in switch(punem obiectul cu key care detine valoarea url pagina)
-    switch (global.currentPage) {
-      case '/':
-      case '/index.html':
-        DisplaySlider()
-        displayPopularMovies();
-        break;
-      case '/shows.html':
-        DisplayTvSlider();
-        displayPopularShows();
-        break;
-      case '/movie-details.html':
-        displayMovieDetails()
-        break;
-      case '/tv-details.html':
-        displayShowDetails()
-        break;
-      case '/search.html':
-        search()
-        break;
+    // switch (global.currentPage) {
+    //   case '/':
+    //   case '/index.html':
+    //     DisplaySlider()
+    //     displayPopularMovies();
+    //     break;
+    //   case '/shows.html':
+    //     DisplayTvSlider();
+    //     displayPopularShows();
+    //     break;
+    //   case '/movie-details.html':
+    //     displayMovieDetails()
+    //     break;
+    //   case '/tv-details.html':
+    //     displayShowDetails()
+    //     break;
+    //   case '/search.html':
+    //     search()
+    //     break;
+    // }
+    if(global.currentPage.includes('/index.html')){
+      DisplaySlider()
+      displayPopularMovies();
     }
   
     activeLi()
