@@ -78,7 +78,6 @@ ul li {
 .img {
     width: 400px;
     height: 400px;
-    background-color: aquamarine;
 }
 
 @media (max-width: 900px) {
