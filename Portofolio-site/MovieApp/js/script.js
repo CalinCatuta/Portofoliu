@@ -101,7 +101,7 @@ function displaySearchResults(results){
             ? `<img src="https://image.tmdb.org/t/p/w500/${result.poster_path}" 
                     alt="${global.search.type === 'movie' ? result.title : result.name}"
                     class="card-img-top">`
-            : `<img src="../images/no-image.jpg" 
+            : `<img src="Portofolio-site/MovieApp/images/no-image.jpg" 
                     alt="${global.search.type === 'movie' ? result.title : result.name}
                     class="card-img-top">`
           }
@@ -170,7 +170,7 @@ function displayPagination(){
           ? `<img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
                   alt="${movie.title}"
                   class="card-img-top">`
-          : `<img src="../images/no-image.jpg" 
+          : `<img src="Portofolio-site/MovieApp/images/no-image.jpg" 
                   alt="${movie.title}"
                   class="card-img-top">`
         }
@@ -201,7 +201,7 @@ function displayPagination(){
           ? `<img src="https://image.tmdb.org/t/p/w500${show.poster_path}" 
                   alt="${show.name}"
                   class="card-img-top">`
-          : `<img src="../images/no-image.jpg" 
+          : `<img src="Portofolio-site/MovieApp/images/no-image.jpg" 
                   alt="${show.name}"
                   class="card-img-top">`
         }
@@ -240,7 +240,7 @@ function displayPagination(){
         ? `<img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" 
           alt="${movie.title}"
           class="card-img-top">`
-        : `<img src="../images/no-image.jpg" 
+        : `<img src="Portofolio-site/MovieApp/images/no-image.jpg" 
           alt="${movie.title}"
           class="card-img-top">`
       }
@@ -298,7 +298,7 @@ function displayPagination(){
         ? `<img src="https://image.tmdb.org/t/p/w500${show.poster_path}" 
           alt="${show.name}"
           class="card-img-top">`
-        : `<img src="../images/no-image.jpg" 
+        : `<img src="Portofolio-site/MovieApp/images/no-image.jpg" 
           alt="${show.name}"
           class="card-img-top">`
       }
@@ -443,17 +443,6 @@ function displayPagination(){
     document.querySelector('.spinner').classList.remove('show')
   }
   
-  // Active nav link.
-  function activeLi() {
-    const links = document.querySelectorAll('.nav-link')
-    links.forEach(link => {
-      // aici in if(punem conditia ca href din <a></a> are aceasi valoare cu linkul de pe pagina actuala)
-      if (link.getAttribute('href') === global.currentPage) {
-        link.classList.add('active')
-      }
-    })
-  }
-
   //Show Alert
   function showAlert(message, className = 'error'){
     const alertElement = document.createElement('div')
