@@ -1,105 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Playball&family=Roboto&display=swap");
-
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-
 }
-
-body {
-    font-family: "Roboto", sans-serif;
+body{
     background: linear-gradient(89.64deg, #f8f8f8 10.51%, #dddddd 101.48%);
 }
-
-nav {
+nav{
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 150px;
 }
-
-a {
+a{
     text-decoration: none;
     color: black;
+    font-size: 1rem;
 }
-
-.logo {
-    text-decoration: none;
-    font-family: "Playball", cursive;
-    font-size: 55px;
-    color: black;
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
 }
-
-ul {
+.project-btn{
+    display: none;
+}
+.wrap{
+    max-width: 1600px;
+    width: 90%;
+    margin-inline: auto;
+}
+.flex{
     display: flex;
-    list-style: none;
-}
-
-ul li {
-    padding: 0px 30px;
-    font-size: 36px;
-}
-
-/* section */
-
-.center {
-    text-align: center;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
+    margin-top: 100px;
 }
-
-.center div {
-    width: clamp(400px, 45%, 600px);
-    margin: 50px;
+.intro p, .about p{
+    width: clamp(300px, 80%, 600px);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
 }
-
-.title {
-    font-size: 2.5rem;
+.intro h1, .about h1{
+    margin-bottom: 15px;
+    font-size:2.5rem;
 }
-
-.text {
-    margin: 20px;
-    font-size: 18px;
+.intro, .about{
+    margin-top: 50px;
 }
-
-/* project */
-.project, .link {
-    display: grid;
-    justify-content: center;
-}
-
-.card {
+.card{
+    margin-top: 50px;
     text-align: center;
-    margin-bottom: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.11);
+}
+.card img{
+    width: 200px;
+}
+.link{
+    margin-top: 15px;
+    display: block;
+    font-size: 1.4rem;
+    background-color: rgb(201, 201, 201);
+    border-radius: 15px;
+    padding: 2px 0px;
+    color: rgb(0, 0, 0);
 }
 
-
-.img {
-    width: 300px;
-    height: 200px;
-}
-
-@media (max-width: 900px) {
-    nav {
-        margin: 90px 50px;
+@media (max-width:1500px){
+    .wrap{
+        text-align: center;
     }
-}
+    .intro p, .about p{
+        font-size: 1rem;
+        padding: 0;
+        margin-inline: auto;
 
-@media (max-width: 650px) {
-    nav {
-        margin: 90px 20px;
+    }
+    .intro h1, .about h1{
+        margin-bottom: 15px;
+        font-size:2rem;
+    }
+    .project-btn{
+        display: block;
+        list-style: none;
+        background-color: white;
+        border-radius: 40px;
+        padding: 6px 30px;
+        
+    }
+    .flex{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .card{
+        width: 250px;
+        margin: 25px 0px;
+        text-align: center;
+        padding: 25px;
+        background-color: white;
+        border-radius: 40px;
     }
 
-    .logo {
-        font-size: 24px;
-    }
-
-    ul li {
-        font-size: 18px;
-        padding: 0px 20px;
-    }
 
 }
