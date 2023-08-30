@@ -84,6 +84,13 @@ footer {
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+.github {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
 
 @media (max-width: 1500px) {
   .wrap {
