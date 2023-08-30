@@ -24,6 +24,7 @@ a {
 .project {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 .project-btn {
   display: none;
@@ -64,6 +65,7 @@ a {
 }
 .card img {
   width: 200px;
+  height: 100px;
 }
 .link {
   margin-top: 15px;
