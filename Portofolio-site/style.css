@@ -74,6 +74,11 @@ a {
   padding: 2px 0px;
   color: rgb(0, 0, 0);
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 @media (max-width: 1500px) {
   .wrap {
