@@ -1,0 +1,58 @@
+Selectam toate .filter in displayData() dupa ce afisam datele in HTML. si
+adaugam pentru fiecare filter in parte functia handleFilterClick on click. 
+
+In handleFilterClick facem resto de textul din .filter pe care am apasat. facem o
+verificare daca deja a fost apasat pe un .filter si mai apasam o data dar pe un
+.filter cu acelas text if (isFilterSelected(filterText)) return; in if dam mai departe filterText.
+
+ In isFilterSelected(filterText) verificam daca
+selectedFilters contine filterText 
+
+In handleFilterClick verificam daca
+selectedFilters.length === 0 atunci scoatem clasa inbisible lui headerContent si
+cream in html constructFilterBtn(filterText) constructFilterBtn(filterText)
+aceasta functie returneaza (
+<span class="job-filter"
+  >${text}
+  <button class="remove-filter-btn"></button> </span
+>`;)
+Daca deja exista un element in jobFilterContainer atunci 
+let lastFilterBtn = jobFilterContainer.lastElementChild;
+    lastFilterBtn.insertAdjacentHTML(
+      "afterend",
+      constructFilterBtn(filterText)
+    );
+prin acest cod vom adauga inca un buton dupa celalant existent.
+
+apoi dam push filterText in selectedFilters Array.
+
+Apoi adaugam event pentru removing filter 
+let removeFilterBtn =
+    jobFilterContainer.lastElementChild.querySelector(".remove-filter-btn");
+  removeFilterBtn.addEventListener("click", (e) => {
+    handleRemoveFilterClick(e, filterText);
+  });
+
+  si la final invocam filterCards().
+
+
+  Functia filterCards() selecteaza fiecare card iar apoi facem un check
+  Daca selectedFilters.length === 0 selectam toti .card.hidden si loop prin ei si le scoatem clasa hidden. si punem return in if{}
+
+  Daca sunt filtre selectate atunci loop prin cards si selectam fiecare card in parte si facem un check  if (!hasSelectedFilters(card)) {
+      card.classList.add("hidden");
+    } else {
+      card.classList.remove("hidden");
+    }
+
+In functia hasSelectedFilters(card) loop through selectedFilters si selectam fiecare filter in parte si facem un check 
+if (!hasTag(filter, card)) {
+      return false;
+    }
+
+    in hasSelectedFilters punem un return true;
+
+
+In hasTag(tagText, card) selectam fiecare filter span din card 
+loop through si selectam fiecare tag in parte si daca tag === cu tagText return true;
+altfel in hasTag function return false;

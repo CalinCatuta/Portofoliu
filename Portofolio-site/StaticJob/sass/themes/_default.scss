@@ -1,0 +1,85 @@
+@import '../base/color';
+
+body {
+    background: $netural-color-100;
+}
+
+.header-content{
+    background: $neutral-color-white;
+}
+.job-filter{
+    background: $netural-color-200;
+    color: $primary-color;
+}
+.remove-filter-btn{
+    background: url('../images/icon-remove.svg') no-repeat, $primary-color;
+    background-position: center;
+
+    &:hover{
+        background: url('../images/icon-remove.svg') no-repeat, $netural-color-400;
+        background-position: center;
+    }
+}
+.clear-btn{
+    color: $netural-color-300;
+
+    &:hover{
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+.card{
+    background: $neutral-color-white;
+
+    &__body{
+        border-bottom-color: $netural-color-300;
+    }&__top{
+        & >span:first-child{
+            color: $primary-color;
+        }
+    }
+    &__detail{
+        color: $netural-color-300;
+    }
+    &--featured{
+        border-left-color: $primary-color;
+    }
+    &__header{
+        color: $netural-color-400;
+
+        &:hover{
+            color: $primary-color;
+            cursor: pointer;
+        }
+    }
+}
+
+.tag{
+    color: $neutral-color-white;
+
+    &--new{
+        background: $primary-color;
+    }
+    &--featured{
+        background: $netural-color-400;
+    }
+}
+
+.filter{
+    background: $netural-color-200;
+    color: $primary-color;
+
+    &:hover{
+        color: $neutral-color-white;
+        cursor: pointer;
+        background: $primary-color;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .filter {
+        &__container{
+            border-top-color: $netural-color-300;
+        }
+    }
+}
