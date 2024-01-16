@@ -16,7 +16,7 @@
     <title>Calin Portofolio</title>
   </head>
   <body>
-   <div class="bulb-grp">
+    <div class="bulb-grp">
       <div class="bulb-light"></div>
       <div class="bulb-light-2"></div>
       <div class="bulb-light-3"></div>
@@ -24,14 +24,16 @@
     </div>
     <!-- nav -->
 
-    <a class="go-up" href="#up"><h1>↑</h1></a>
+    <a class="go-up" id="scrollUpBtn" onclick="scrollToTop()" href="#"
+      ><h1>↑</h1></a
+    >
 
     <nav class="nav-glass" id="up">
       <h1>Portfolio</h1>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" onclick="scrollToElement('#about')">About</a></li>
+        <li><a href="#" onclick="scrollToElement('#projects')">Projects</a></li>
+        <li><a href="#" onclick="scrollToElement('#contact')">Contact</a></li>
       </ul>
     </nav>
 
@@ -100,7 +102,7 @@
             <p><strong>Tech</strong>: Html, Css, Bootstrap, JavaScript, OOP.</p>
             <div class="btn-grp">
               <a
-                href="/portofoliu/Portofolio-site/Trackcalorie/index.html"
+                ref="/portofoliu/Portofolio-site/Trackcalorie/index.html"
                 target="_blank"
                 >Visit</a
               >
@@ -186,6 +188,17 @@
         glare: true,
         "max-glare": 1,
       });
+      function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      }
+      function scrollToElement(elementId) {
+        var element = document.querySelector(elementId);
+        if (element) {
+          // Scroll to the element smoothly
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     </script>
   </body>
 </html>
