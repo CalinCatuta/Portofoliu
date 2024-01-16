@@ -341,7 +341,7 @@ nav ul li a:hover {
 
 @media (max-width: 450px) {
   .project {
-    width: 80%;
+    width: 100%;
     margin-inline: auto;
   }
 }
