@@ -16,7 +16,7 @@
     <title>Calin Portofolio</title>
   </head>
   <body>
-    <div class="bulb-grp">
+   <div class="bulb-grp">
       <div class="bulb-light"></div>
       <div class="bulb-light-2"></div>
       <div class="bulb-light-3"></div>
@@ -24,16 +24,18 @@
     </div>
     <!-- nav -->
 
-    <a class="go-up" id="scrollUpBtn" onclick="scrollToTop()" href="#"
-      ><h1>↑</h1></a
-    >
+    <button class="go-up" id="scrollUpBtn" onclick="scrollToTop()">
+      <h1>↑</h1>
+    </button>
 
     <nav class="nav-glass" id="up">
       <h1>Portfolio</h1>
       <ul>
-        <li><a href="#" onclick="scrollToElement('#about')">About</a></li>
-        <li><a href="#" onclick="scrollToElement('#projects')">Projects</a></li>
-        <li><a href="#" onclick="scrollToElement('#contact')">Contact</a></li>
+        <li><button onclick="scrollToElement('#about')">About</button></li>
+        <li>
+          <button onclick="scrollToElement('#projects')">Projects</button>
+        </li>
+        <li><button onclick="scrollToElement('#contact')">Contact</button></li>
       </ul>
     </nav>
 
