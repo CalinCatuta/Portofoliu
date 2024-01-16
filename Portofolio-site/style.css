@@ -109,10 +109,7 @@ nav ul li a {
 nav ul li a:hover {
   padding: 6px 4px;
   background: rgba(255, 255, 255, 0.13);
-  border-radius: 6px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.8px);
-  -webkit-backdrop-filter: blur(1.8px);
+  border-radius: 10px;
   transition: 0.2s;
 }
 
