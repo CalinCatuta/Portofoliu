@@ -16,95 +16,176 @@
     <title>Calin Portofolio</title>
   </head>
   <body>
-    <div class="wrap">
-      <nav>
-        <a class="logo">Portofolio</a>
-        <ul>
-          <li class="project-btn"><a href="#project">Project</a></li>
-        </ul>
-      </nav>
-
-      <div class="flex">
-        <section class="container">
-          <div class="intro">
-            <h1 class="title">About Me</h1>
-            <p class="text">
-              Hi, my name is Calin Catuta and I'm 23 years old. I'm a programmer
-              from Romania and this website is my Portofolio to apply for jobs.
-              Here I show some projects I made and talk about my learning
-              progress in the programming world.
-            </p>
-          </div>
-
-          <div class="about">
-            <h1 class="title">My journey</h1>
-            <p class="text">
-              I started learning C++ in 2017 for game creation and after some
-              time I learned about web development. In 2019 I started to learn
-              HTML and CSS and I was tinkering with them for some time, then I
-              picked up Sass, Bootstrap and Tailwind. At that time I was learning
-              from w3school and YouTube, after some time I started to learn
-              jQuery and JavaScript. In 2023 after I learned a lot from YouTube and created websites
-              I purchased courses with JavaScript and React where I also learned about some backend (Express,MongoDB).
-            </p>
-          </div>
-        </section>
-
-        <section class="project" id="project">
-          <div class="card">
-            <img src="movieapp.png" class="img" alt="moveiapp page" />
-            <a
-              href="/portofoliu/Portofolio-site/MovieApp/index.html"
-              target="_blank"
-              class="link"
-              >Visit</a
-            >
-          </div>
-          <div class="card">
-            <img src="trackApp.png" class="img" alt="TrackerApp page" />
-            <a
-              href="/portofoliu/Portofolio-site/Trackcalorie/index.html"
-              target="_blank"
-              class="link"
-              >Visit</a
-            >
-          </div>
-          <div class="card">
-            <img src="staticjob.png" class="img" alt="Static Job Project" />
-            <a
-              href="/portofoliu/Portofolio-site/StaticJob/index.html"
-              target="_blank"
-              class="link"
-              >Visit</a
-            >
-          </div>
-          <!-- React -->
-          <div class="card">
-            <iframe
-              width="100%"
-              height="60%"
-              src="https://www.youtube.com/embed/vvyIx_FYlCc?si=r0qu9_72HAfVQyb4"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-            <a
-              href="https://github.com/CalinCatuta/React-Projects"
-              target="_blank"
-              class="link"
-              >Github Repo</a
-            >
-          </div>
-        </section>
-      </div>
+   <div class="bulb-grp">
+      <div class="bulb-light"></div>
+      <div class="bulb-light-2"></div>
+      <div class="bulb-light-3"></div>
+      <div class="bulb-light-4"></div>
     </div>
+    <!-- nav -->
 
-    <footer>
-      <a href="https://github.com/CalinCatuta" target="_blank" class="github"
-        >GitHub</a
-      >
-      <p>Email : contact@calincatuta.ro</p>
-    </footer>
+    <a class="go-up" href="#up"><h1>↑</h1></a>
+
+    <nav class="nav-glass" id="up">
+      <h1>Portfolio</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-content card">
+        <h1 class="title">About Me</h1>
+        <p class="text">
+          Hi, my name is Calin Catuta and I'm 24 years old. I'm a programmer
+          from Romania and this website is my Portfolio to apply for jobs. Here
+          you can see some projects I made and my learning progress in the
+          programming world.
+        </p>
+      </div>
+      <div class="space"></div>
+      <div class="journey-content card">
+        <h1 class="title">My journey</h1>
+        <p class="text">
+          I started learning C++ in 2017 for game creation and after some time I
+          learned about web development. In 2019 I started to learn HTML and CSS
+          and I was tinkering with them for some time, then I picked up Sass,
+          Bootstrap and Tailwind. At that time I was learning from w3school and
+          YouTube, after some time I started to learn jQuery and JavaScript. In
+          2023 after I learned a lot from YouTube and created websites I
+          purchased courses with JavaScript and React where I also learned about
+          some backend (Express, MongoDB).
+        </p>
+      </div>
+    </section>
+    <!-- Projects -->
+
+    <section class="projects" id="projects">
+      <h1>Projects</h1>
+      <div class="projects-container">
+        <div class="project">
+          <img src="movieapp.png" />
+          <div class="project-info">
+            <p>
+              <strong>Description</strong>: This is a website where you can see
+              information about movies & tv shows.
+            </p>
+            <p>
+              <strong>Tech</strong>: Html, Css, JavaScript, SwiperJs,
+              TheMovieAPI.
+            </p>
+            <div class="btn-grp">
+              <a
+                href="/portofoliu/Portofolio-site/MovieApp/index.html"
+                target="_blank"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/CalinCatuta/Portofoliu/tree/main/Portofolio-site/MovieApp"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="trackApp.png" />
+          <div class="project-info">
+            <p>
+              <strong>Description</strong>: This is a website/app where you can
+              count your Consumed Calories & Burned Calories.
+            </p>
+            <p><strong>Tech</strong>: Html, Css, Bootstrap, JavaScript, OOP.</p>
+            <div class="btn-grp">
+              <a
+                ref="/portofoliu/Portofolio-site/Trackcalorie/index.html"
+                target="_blank"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/CalinCatuta/Portofoliu/tree/main/Portofolio-site/Trackcalorie"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="staticjob.png" />
+          <div class="project-info">
+            <p>
+              <strong>Description</strong>: This is a task from FrontendMentor,
+              you can filter the jobs clicking on tags.
+            </p>
+            <p><strong>Tech</strong>: Html, Css, Sass, Json, JavaScript.</p>
+            <div class="btn-grp">
+              <a
+                href="/portofoliu/Portofolio-site/StaticJob/index.html"
+                target="_blank"
+                >Visit</a
+              >
+              <a
+                href="https://github.com/CalinCatuta/Portofoliu/tree/main/Portofolio-site/StaticJob"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <iframe
+            width="300px"
+            height="200px"
+            src="https://www.youtube.com/embed/vvyIx_FYlCc?si=r0qu9_72HAfVQyb4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <div class="project-info">
+            <p>
+              <strong>Description</strong>: This is a group of projects with
+              React.
+            </p>
+            <p>
+              <strong>Tech</strong>: React, Redux, MongoDb, ExpressJs, Firebase,
+              GitHubAPI.
+            </p>
+            <div class="btn-grp">
+              <a
+                href="https://github.com/CalinCatuta/React-Projects"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1>Contact</h1>
+      <div class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/calin-catuta-665a19238/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/CalinCatuta" target="_blank">GitHub</a>
+        <a href="#">contact@calincatuta.ro</a>
+      </div>
+    </section>
+
+    <!-- light -->
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 800,
+        gyroscopeMinAngleX: -205,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
